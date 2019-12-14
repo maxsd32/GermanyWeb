@@ -38,6 +38,9 @@ body {
     background-color: #ddd;
     color: black;
 }
+.navbar a.right{
+    float: right;
+}
 
 .navbar a.active {
     background-color: #666;
@@ -64,11 +67,13 @@ body {
     padding: 20px;
 }
 
-/* Fake image, just for this example */
 .fakeimg {
     background-color: #aaa;
     width: 100%;
     padding: 20px;
+}
+.img1{
+    background-image: url("pictures/fgnhfghfgj.jpg")
 }
 
 .footer {
