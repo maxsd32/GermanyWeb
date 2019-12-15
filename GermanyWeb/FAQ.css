@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
@@ -95,3 +96,24 @@ body {
         width: 100%;
     }
 }
+=======
+body {
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+}
+h1 {
+    color: black;
+}
+
+p {
+    font-size: 16px;
+}
+
+p.sans-serif {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+>>>>>>> 01e69c2d0f3c7701760c99b4c31a639a26706618
