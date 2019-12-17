@@ -52,8 +52,20 @@ body {
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
 }
+.row1{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
 
 .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.side1 {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
     background-color: #f1f1f1;
