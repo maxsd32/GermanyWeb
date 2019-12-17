@@ -1,38 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="Login.css">
+<title>Login Page</title>
 </head>
 <body>
-    <div class = "login-page">
+<form name="loginForm" method="post" action="aboutus.html">
+<table width="20%" bgcolor="0099CC" align="center">
 
-        <div class = "form">
-            <form class ="register-form">
-                <input type ="text" placeholder="username"/>
-                <input type = "tex" placeholder="password"/>
-                <input type ="text" placeholder="email id"/>
-                <button>Create</button>
-                <p class ="message">Already Registered? <a href="#">Login </a></p>
-            </form>
-                <form class = "login-form">
-                    <input type="text" placeholder = "user name"/>
-                    <input type="password" placeholder="password"/>
-                    <button> login</button>
-                    <p class ="message"> Not Registered? <a href ="#"> Register</a></p>
+<tr>
+<td colspan=2><center><font size=4><b>Login</b></font></center></td>
+</tr>
 
-            </form>
-        </div>
-    </div>
-<script src='https://code.jquery.com/jquery-3.2.1.min.js'>
-    </script>
-<script>
-    $('.message a').click(function(){
-        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-    });
-    </script>
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
 
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+<td><input type="button" id="btnNewGame" onClick="newUser()" value="I Don't Have An Account!" align="center"></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+var username = "987654321";
+var password = "0123456789";
+function check(form)
+{
+
+/*var username1 = form.userid.value;
+var password1 = "form.userid.value
+alert(form.userid.value);*/
+
+if((form.userid.value)===(username) && (form.pwd.value)===(password))
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+
+function newUser(){
+username = prompt("Please enter a username:");
+alert(username);
+password = prompt("Please enter a password:");
+alert(password);
+alert("Your account has been created! Please login above!");
+}
+</script>
 
 </body>
 </html>
