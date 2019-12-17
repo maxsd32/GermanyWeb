@@ -36,6 +36,9 @@ header {
     color: black;
 }
 
+.navbar a.right{
+    float: right;
+}
 
 /* Create two columns/boxes that floats next to each other */
 nav {
