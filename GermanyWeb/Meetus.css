@@ -31,19 +31,25 @@ header {
     padding: 14px 20px;
     text-decoration: none;
 }
-
-
 .navbar a:hover {
     background-color: #ddd;
     color: black;
 }
-.navbar a.right{
-    float: right;
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
 }
 
-.navbar a.active {
-    background-color: #666;
-    color: white;
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 article {
