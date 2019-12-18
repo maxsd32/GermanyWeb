@@ -7,11 +7,11 @@ body {
 }
 
 /* Style the header */
-header {
-    background-color: #666;
-    padding: 30px;
+.header {
+    padding: 80px;
     text-align: center;
-    font-size: 35px;
+    background-image: url("pictures/GermanyBackground2.jpg");
+    background-size: cover;
     color: white;
 }
 
