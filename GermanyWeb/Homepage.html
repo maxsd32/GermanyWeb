@@ -32,9 +32,9 @@
         <div class="img1" style="height:200px;"></div>
         <p><font color = "white">Currently these are our available tours at the moments</font></p>
 
-        <div class="fakeimg1" style="height:150px;">Image</div><br>
-        <div class="fakeimg2" style="height:150px;">Image</div><br>
-        <div class="fakeimg3" style="height:150px;">Image</div><br>
+        <div class="container1" style="height:150px;"><div class ="text1">Day Trip to Neuschwanstein & Linderhof Castles from Munich</div>div></div><br>
+        <div class="container2" style="height:150px;"><div class ="text1">Best of Europe from Frankfurt</div></div><br>
+        <div class="container3" style="height:150px;"></div><br>
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
@@ -76,6 +76,19 @@
                    href="https://www.zeitverschiebung.net/en/country/de"><span style="color:black;">Current local time in</span>
                 <br />Germany</a>
             </h4> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FBerlin" width="100%" height="90" frameborder="0" seamless></iframe>
+            <button class="open-button" onclick="openForm()">Chat</button>
+
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Help</h1>
+
+                    <label for="msg"><b>Hello! We are here to help you!</b></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
         </div>
         <p></p>
         <p></p>
