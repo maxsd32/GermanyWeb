@@ -95,7 +95,7 @@ body {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #333;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -214,7 +214,7 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 500px;
     position: relative;
     margin: auto;
 }
@@ -303,4 +303,15 @@ body {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+.fakeimg1{
+    background-image:url("pictures/fakepic1.jpg");
+    background-size: cover;
+}
+.fakeimg2{
+    background-image:url("pictures/slide2321.png");
+    background-repeat: no-repeat;
+}
+.fakeimg3{
+
 }
