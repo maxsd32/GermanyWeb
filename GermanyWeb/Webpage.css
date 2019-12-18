@@ -62,7 +62,7 @@ body {
 .side {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    background-color: #f1f1f1;
+    background-color:  #666;
     padding: 20px;
 }
 .side1 {
