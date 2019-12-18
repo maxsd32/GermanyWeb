@@ -100,3 +100,25 @@ section:after {
         height: auto;
     }
 }
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    display:block;
+}
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color:  #666;
+    padding: 20px;
+}
+.side1 {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
