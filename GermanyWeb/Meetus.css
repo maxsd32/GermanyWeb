@@ -33,8 +33,36 @@ header {
         width: 100%;
     }
 }
+<<<<<<< HEAD
 .footer {
     padding: 20px;
     text-align: center;
     background: #333;
 }
+=======
+<<<<<<< HEAD
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    display:block;
+}
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color:  #666;
+    padding: 20px;
+}
+.side1 {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+=======
+>>>>>>> 2a8f4174c6f05aa33b1b13731188d3b519616a79
+>>>>>>> 9efd68ed0fdd67061ae1775f26baf1d0571a1d21
