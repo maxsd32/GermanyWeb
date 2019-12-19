@@ -8,60 +8,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
+        h2 {
+            text-align: center;
+        }
 
+        h4 {
+            text-align: center;
+        }
+
+        /* Centers image in food tour */
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
     </style>
-
 </head>
 <body>
 
 <div class="header">
     <h1>Global Insight Germany</h1>
-    <b>Travel </b><b>Explore </b><b>Adventure </b></p>
+    <b>Travel - </b><b>Explore </b><b> - Adventure </b></p>
 </div>
 
+<!--Navigation Bar on top with references to other HTML pages-->
 <div class="navbar">
     <a href="Homepage.html" class="active">Home</a>
     <a href="aboutus.html">About Us</a>
     <a href="FAQ.html">FAQs</a>
     <a href="Tour.html" >Tours</a>
     <a href="Login.html" class="right">Login</a>
-    <a href="MeetOurTeam.html" >Meet Our Team</a>
+    <a href="MeetOurTeam.html">Meet Our Team</a>
 </div>
 
+<!--Side nav bar-->
 <div class="row">
     <div class="side">
         <h2>Team 4 provides a variety of tours</h2>
         <div class="img1" style="height:200px;"></div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        <h3>More Text</h3>
-        <p>Lorem ipsum dolor sit ame.</p>
-        <div class="fakeimg" style="height:60px;">Image</div><br>
-        <div class="fakeimg" style="height:60px;">Image</div><br>
-        <div class="fakeimg" style="height:60px;">Image</div>
+        <p>We are always looking to please our customers</p>
+        <h3>Read what others have said!</h3>
+        <h5>Customer testimonials:</h5>
+        <p><i>"The tours arranged by Global Insight Germany took a load off my travel plans. They were able to arrange transportation with other tourists, allowing us to meet new people."</i></p>
+        <div>
+            <img src="pictures/walkingTour.jpg" style="height:200px;">
+        </div>
+        <p>-B. Smith</p>
+        <br>
+        <p><i>"We wanted a genuine experience, so we traveled by subway (transportation was offered, but we wanted to get to know the city). Global Insight Germany provided us with free subway passes and a guide to the Brandenberg Gate"</i></p>
+        <div>
+            <img src="pictures/guide1.jpg" style="height:200px;">
+        </div>
+        <p>-M. Johnson</p>
+        <br>
+        <p><i>"Visiting Checkpoint Charlie by scooter was a unique way to get around the city! I just paid Global Insight Germany a flat fee instead of being charged by the minute with scooter app and was able to ride the scooters all day!"</i></p>
+        <div>
+            <img src="pictures/scooters.jpg" style="height:200px" width="300px">
+        </div>
+        <p>- J. Oakes</p>
     </div>
+
+    <!--Main content-->
+    <!--Museum Tours Section-->
     <div class="main">
         <h2>Museum Tours</h2>
-        <h5>Museum Island</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text about Museum Island and different museum tours...</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <h4>Museum Island</h4>
+
+        <!--First slideshow-->
+        <div>
+            <style>
+                * {box-sizing: border-box}
+                body {font-family: Verdana, sans-serif; margin:0}
+                .mySlides {display: none}
+                img {vertical-align: middle;}
+
+                /* Slideshow container */
+                .slideshow-container {
+                    max-width: 500px;
+                    position: static;
+                    margin: auto;
+                }
+
+                /* The dots/bullets/indicators */
+                .dot {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+
+                .active, .dot:hover {
+                    background-color: #717171;
+                }
+
+                /* Fading animation */
+                .fade {
+                    -webkit-animation-name: fade;
+                    -webkit-animation-duration: 1.5s;
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+
+                @-webkit-keyframes fade {
+                    from {opacity: .4}
+                    to {opacity: 1}
+                }
+
+                @keyframes fade {
+                    from {opacity: .4}
+                    to {opacity: 1}
+                }
+
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) {
+                    .prev, .next,.text {font-size: 11px}
+                }
+            </style>
+            </head>
+            <body>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="pictures/museumIsland3.jpg" style="width:500px">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="pictures/museumIsland2.jpg" style="width:500px">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="pictures/museumIsland.jpg" style="width:500px">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <!--Buttons on bottom to navigate through pictures-->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <!--In-line JavaScript-->
+            <!--Controls slideshow images-->
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+            </script>
+            </body>
+        </div>
+        <!--Button for Museum Tours section-->
+        <button type="button" onclick="alert('Your tour is now reserved. You will receive a confirmation email shortly')">Click to Book!</button>
+        <p>Museum Island is a unique ensemble of five museums on Spree Island in the district of Mitte in Berlin. The entire complex is listed by UNESCO as a World Heritage Site.</p>
+        <p>One ticket allows you access to all five museums. Global Insight Germany will gladly assign a tour guide who has expertise in Germany history and one who speaks both English and German to ensure visitors gain insightful knowledge</p>
         <br>
-        <h2>Walking Tours</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+        <!--Food Tours Section-->
+        <h2>Food Tours</h2>
+        <h4>Learn about German cuisine and experience it first hand!</h4>
+        <img src="pictures/food2.jpeg" class="center" style="height:300px;">
         <br>
-        <h2>Walking Tours</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <!--Button for Food Tours Section-->
+        <button type="button" onclick="alert('Your tour is now reserved. You will receive a confirmation email shortly')">Click to Book!</button>
+        <p>From food stands to fine dining, Germany offers some of the best tastes around the world</p>
+        <p>Let Global Insights Germany arrange reservations for you and your group to the top rated restaurants in Germany and save money! Also, be sure try the local food option of the tour, showing what great flavors Germany has to offer, such as Bratwurst (Beer and wine included).</p>
+        <p>Restaurants include:
+            <br>
+            Aqua (Wolfsburg); La Vie (Osnabrück); Borchardt (Berlin); Tantris (Munich); Relish (Berlin);
+        </p>
+        <br>
+
+        <!--University Tours Section-->
+        <h2>University Tours</h2>
+        <h4>Attend college in Germany!</h4>
+        <img src="pictures/university.jpg" class="center" style="height: 300px; width: 400px">
+        <br>
+        <!--Button for University Tours Section-->
+        <button type="button" onclick="alert('Your tour is now reserved. You will receive a confirmation email shortly')">Click to Book!</button>
+        <p>Studying overseas can be very cost efficient compared the United States</p>
+        <p>Attend top tier colleges for a lower tuition rate. Allow Global Insight Germany to ease the process of choosing a university by taking you and your group to see various different universities.</p>
+        <p>Tours are to universities such as Hof University of Applied Sciences, Universität Freiburg, Technische Universität München</p>
+        <h2>And many more being added!</h2>
     </div>
 </div>
 
 <div class="footer">
     <h5> © Global Insight on Germany, 49231 Raverland Ave, Suite 132 California</h5>
 </div>
+
 </body>
 </html>
